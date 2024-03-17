@@ -50,8 +50,8 @@ const SendMail = async (email: string, tokenSenha: string) => {
         const mailOptions = {
           from: fromEmail,
           to: email,
-          subject: "Redefinição de Senha - Multiconnect",
-          text: `Olá,\n\nVocê solicitou a redefinição de senha para sua conta no Multiconnect. Utilize o seguinte Código de Verificação para concluir o processo de redefinição de senha:\n\nCódigo de Verificação: ${tokenSenha}\n\nPor favor, copie e cole o Código de Verificação no campo 'Código de Verificação' na plataforma Multiconnect.\n\nSe você não solicitou esta redefinição de senha, por favor, ignore este e-mail.\n\n\nAtenciosamente,\nEquipe Multiconnect`
+          subject: "Redefinição de Senha - IO2",
+          text: `Olá,\n\nVocê solicitou a redefinição de senha para sua conta no IO2. Utilize o seguinte Código de Verificação para concluir o processo de redefinição de senha:\n\nCódigo de Verificação: ${tokenSenha}\n\nPor favor, copie e cole o Código de Verificação no campo 'Código de Verificação' na plataforma IO2.\n\nSe você não solicitou esta redefinição de senha, por favor, ignore este e-mail.\n\n\nAtenciosamente,\nEquipe IO2`
         };
 
         const info = await transporter.sendMail(mailOptions);

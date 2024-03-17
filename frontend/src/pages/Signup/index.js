@@ -31,18 +31,18 @@ import { openApi } from "../../services/api";
 import toastError from "../../errors/toastError";
 import moment from "moment";
 import logo from "../../assets/logo.png";
- const Copyright = () => {
- 	return (
- 		<Typography variant="body2" color="textSecondary" align="center">
- 			{"Copyright © "}
- 			<Link color="inherit" href="https://www.instagram.com/mginformatica.oficial/">
- 				Multiconnect
- 			</Link>{" "}
+const Copyright = () => {
+	return (
+		<Typography variant="body2" color="textSecondary" align="center">
+			{"Copyright © "}
+			<Link color="inherit" href="https://www.instagram.com/luizcarlos_tn/">
+				IO2
+			</Link>{" "}
 			{new Date().getFullYear()}
- 			{"."}
- 		</Typography>
- 	);
- };
+			{"."}
+		</Typography>
+	);
+};
 
 const useStyles = makeStyles(theme => ({
 	paper: {
@@ -168,7 +168,7 @@ const SignUp = () => {
 										required
 									/>
 								</Grid>
-								
+
 								<Grid item xs={12}>
 									<Field
 										as={TextField}
@@ -183,8 +183,8 @@ const SignUp = () => {
 										required
 									/>
 								</Grid>
-								
-								 <Grid item xs={12}>
+
+								<Grid item xs={12}>
 									<Field
 										as={TextField}
 										variant="outlined"
@@ -199,7 +199,7 @@ const SignUp = () => {
 										required
 									/>
 								</Grid>
-								
+
 								<Grid item xs={12}>
 									<InputLabel htmlFor="plan-selection">Plano</InputLabel>
 									<Field
@@ -244,7 +244,7 @@ const SignUp = () => {
 					)}
 				</Formik>
 			</div>
-			<Box mt={5}>{ <Copyright /> }</Box>
+			<Box mt={5}>{<Copyright />}</Box>
 		</Container>
 	);
 };
